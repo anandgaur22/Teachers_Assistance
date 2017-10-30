@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anandgaur.teachers">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/techicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BaseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".profile_activity"
+            android:parentActivityName=".BaseActivity" />
+        <activity
+            android:name=".Student_Registartion"
+            android:parentActivityName=".profile_activity" />
+        <activity
+            android:name=".noteCreate"
+            android:parentActivityName=".noteActivity" />
+        <activity
+            android:name=".attendanceActivity"
+            android:parentActivityName=".BaseActivity" />
+        <activity
+            android:name=".Result_activity"
+            android:parentActivityName=".cgpa_activity" />
+        <activity
+            android:name=".cgpa_activity"
+            android:parentActivityName=".BaseActivity" />
+        <activity
+            android:name=".noteActivity"
+            android:parentActivityName=".BaseActivity" />
+        <activity
+            android:name=".scheduler"
+            android:parentActivityName=".BaseActivity" />
+        <activity
+            android:name=".make_schedule"
+            android:parentActivityName=".scheduler" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".BaseActivity" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".BaseActivity" />
+        <activity android:name=".Edit_Student"
+            android:parentActivityName=".BaseActivity"/>
+    </application>
+
+</manifest>
